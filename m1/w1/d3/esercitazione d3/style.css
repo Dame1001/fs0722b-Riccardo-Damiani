@@ -43,12 +43,33 @@ body {
     border-width: 3px;
     border-color: red;
     color: red;
+    text-align: center;
 
 
 }
 
+#ingredients {
+    text-align: center;
+}
+
+#list1 {
+    text-align: center;
+
+}
+
+#list2 {
+    text-align: center;
+}
+
 #method {
     margin-left: 20px;
+}
+#method1 {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
 }
 
 
