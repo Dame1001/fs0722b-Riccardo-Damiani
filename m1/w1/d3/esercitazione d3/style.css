@@ -1,0 +1,55 @@
+#logo {
+    text-align: center;
+}
+
+body {
+    font-family:'Ubuntu', serif;
+    font-weight: 400;
+    
+}
+
+#titolo {
+    text-align: center;
+}
+
+#testo-sopra-foto {
+    text-align: center;
+}
+
+#underlogo {
+    
+    border-top: solid;
+    border-color: yellow;
+    border-width: 3px;
+    color: rgb(27, 116, 231);
+    text-align: center;
+
+}
+
+#img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#caption {
+    color: grey;
+   text-align: center;
+}
+
+#featured {
+
+    border-left: solid;
+    border-width: 3px;
+    border-color: red;
+    color: red;
+
+
+}
+
+#method {
+    margin-left: 20px;
+}
+
+
+
