@@ -1,0 +1,65 @@
+/*
+Anatomia di un blocco css
+selettore{
+proprietà/
+regole:
+valore;
+
+*/
+
+div{ /*Peso: 1*/
+    color:red;
+    
+}
+
+.colore-blu { /*Peso: 10*/
+      color: blue;
+}
+
+.bordo-sotto { /*Peso: 100*/
+    border-bottom: 1px solid #000;
+}
+
+#sfondo-verde {
+    background-color: green;
+}
+
+div{ /*Peso: 1*/
+    color:aqua;
+    
+}
+
+/* Selettori gerarchici */
+
+div div{ /*Peso: 1+1=2*/
+    color: green;
+}
+
+.testo-grigio div{/*Peso: 10+1=11*/
+    color:grey;
+}
+
+.testo-grigio div span{
+    text-decoration: underline;
+}
+
+.testo-grigio > span {
+    text-transform: uppercase;
+}
+
+/*Selettori multipli*/
+
+h1, h2, h3, h4, h5, h6{ /*Peso: 1, 1, 1, 1, 1, 1*/
+    color: #808080
+}
+
+/*Selezionare un singolo elemento aumentando la specificità */
+
+div#test.classe1.classe2 { /*Peso: 1+100+10+10*/
+    height: 100px;
+    background-color: yellow;
+}
+
+
+
+

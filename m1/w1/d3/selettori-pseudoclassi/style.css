@@ -1,0 +1,47 @@
+/* tutti gli span che si trovano dopo un elemento con la classe primo-p*/
+
+.primo-p + span{
+    color: red;
+}
+
+input[type=text]{
+    border: 1px solid red;
+}
+
+input[type=text]{
+    border: 5px solid red;
+}
+
+
+input[type="checkbox"]:checked + div{
+      background-color: yellow;
+}
+
+table tr:nth-of-type(odd){
+    background-color: grey;
+}
+
+table tr:first-of-type td:hover{
+    color:white;
+    transition: color 0.5s;
+    
+}
+
+table tr:last-of-type td::after{
+    content: ">";
+    
+}
+
+table tr:last-of-type td::before{
+    content: "<";
+    
+}
+
+table tr:last-of-type td:hover:before{
+    content: "occhio";
+    
+}
+
+
+
+
