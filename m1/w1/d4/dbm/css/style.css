@@ -1,0 +1,109 @@
+.quadrato{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#q2{
+    overflow: hidden;
+}
+
+#q3{
+    overflow-y: auto;
+}
+
+#q4 {
+    width: auto;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+#q5 {
+    padding: 15px;
+     
+    /*
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px; 
+    padding-left: 15px; 
+
+    padding: 10 px 20 px top bottom: 10; right left: 20;
+
+    padding: 15px 5px 1px 15px; top right bottom left
+    */
+    box-sizing: border-box;
+
+    margin-left: 50px;
+}
+
+#q6{
+    margin: 0 auto;
+    
+}
+
+#q7 {
+    border: 5px dashed black;
+    outline: 5px solid rgba(255, 0, 0, 0.137);
+    outline-offset: 5px;
+    border-bottom: none;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 25%;
+    background-color: transparent;
+}
+
+#q8{
+    background-color: green;
+    height: 100vh;
+    
+}
+
+#q8 ul{
+    list-style: circle;
+    padding-left: 20px ;
+}
+
+/* pagina layout*/
+
+.colonna{
+    width: calc(100% / 6 - 15px);
+    height: 200px;
+    background-color: bisque;
+    float: left;
+    border: 1px solid #000;
+
+}
+
+.imgright{
+    float: left;
+
+}
+
+.colonna.no-float {
+    float: none;
+    display: inline-block;
+    margin: 5px 5px;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#griglia-esperimenti .colonna:nth-of-type(4){
+    opacity: 0.5;
+    box-shadow: 3px 3px 5px #000, -3px -3px 5px rgb(238, 0, 0)
+}
+
+#griglia-esperimenti .colonna:nth-of-type(5){
+    visibility: hidden;
+}
+
+#griglia-esperimenti .colonna:nth-of-type(6){
+    display: none;
+}
+
+:target{
+    background-color: red;
+}
+

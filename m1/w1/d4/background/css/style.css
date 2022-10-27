@@ -1,0 +1,44 @@
+#bg1{
+    background-image: url(../img/874582.png);
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+    ;
+}
+
+#bg2{
+    background-image: url(../img/874582.png);
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#bg3{
+    background-image: url(../img/935667.png);
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-repeat:repeat;
+    background-size: 50px ;
+}
+
+#bg4{
+    background-image: url(../img/935667.png), url(../img/874592.png) ;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-repeat:no-repeat;
+    background-size: 100px ;
+    background-position:0 150px, 150px 0;
+}
+
+/*
+img{
+    max-widht: 100%;
+*/
