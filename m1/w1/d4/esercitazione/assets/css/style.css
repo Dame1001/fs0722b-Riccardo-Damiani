@@ -1,32 +1,37 @@
 /* IMPOSTAZIONI GENERALI */
 
+:root {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap')
+
+}
+
+
 
 body {
 
     
         font-family:'Poppins', serif;
-        font-weight: 400;
+        font-weight: 400, 600;
         background-image: url(../img/sfondo.png);
         background-position: center center;
         padding: 20px;
         list-style-type: none;
             
  }
-   
 
  b {
-    color: black;
-    font-size: 600;
- }
+  font-size: 600;
+  color: black;
 
-     
+ }
+   
+  
 /* HEADER */
 #riq-header{
    
     max-height: 100%;
     background-color: rgb(64, 146, 223);
-    
-    margin-top: 15px;
+     margin: 11px;
     box-shadow: 3px 3px 5px rgba(187, 187, 187, 0.884);
     text-align: center;
   
