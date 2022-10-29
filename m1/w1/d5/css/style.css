@@ -7,9 +7,11 @@ body{
     color: #393d41;
     font-size: 1.2rem;
     line-height: 1.65em;
-    padding: 10px;
+    
 }
 
+
+/*----------------------------------------------- H E A D E R ----------------------------------------------------*/
 
 #header {
 
@@ -29,6 +31,8 @@ body{
 p{
     margin-bottom: 20px;
     padding: 10px;
+   
+
 }
 
 
@@ -38,54 +42,46 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #25a2c3;
-    line-height: 1.5;
+    line-height: 1;
     text-align: center;
     font-size: 40px;
     margin-bottom: 20px;
     max-width: 100%;
-    
-    
+    padding-top: 30px;
 }
 
 
-#p-uh1 {
-    margin-bottom: 20px;
-    padding: 10px;
-}
+/*----------------------------------------------- M A I N ---------------------------------------------------------*/
 
 #section-1 {
     background-image: url(../images/banner.jpg);
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
-    height: 375px;
-    
-     
-    }
-
-    a{
-        text-decoration: none;
-    }
-
-    #cta {
-         font-family: 'Montserrat', sans-serif;
-         font-weight: bold;
-         background-color: #f04c2f;
-         padding: 12px ;
-         border-radius: 5px;
-         text-align: center;
-         margin-left: 100px;
-         margin-right: 100px;
-         
-         
-         }
-
-
-#section-2{
-    margin-top: 60px;
-    text-align: center;
+    height: 383px;  
 }
 
+#primo-p {
+    margin-bottom: 45px;
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #f04c2f;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 5px;              
+}
+     
+#section-2{
+    margin-top: 40px;
+    text-align: center;
+}      
+        
 h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -93,18 +89,36 @@ h3{
     line-height: 1.5;
     text-align: center;
     font-size: 20px;
+}
 
+#tutti-ti-cercheranno {
+    padding: 35px;
+    margin-bottom: -45px;
+}
+
+#lavora-dove-vuoi {
+    padding: 30px;
+    margin-bottom: -10px;
 }
 
 #notebook {
-    width: 350px;
-    border-radius: 50%;
-    
+    width: 300px;
+    border-radius: 50%;    
 }
 
 #scegli {
-    padding-top: 25px;
-    line-height: 1.5;
+    padding: 30px;
+    margin-bottom: -45px;  
+}
+
+#lavoro-in-libertà {
+    padding: 30px;
+}
+
+#section-3{
+    background-color:  #e22d03;
+    text-align: center;
+    color: white;
 }
 
 h2{
@@ -114,20 +128,116 @@ h2{
     text-align: center;
     font-size: 35px;
     color: white;
+}
 
+#garantisce {
+    padding-top: 53px;
+}
+
+#cit {
+    font-style: italic;
+    padding-top: 30px;
+    line-height: 1.5; 
+}
+
+#mario{
+    margin-bottom: -18px; 
+}
+
+#ceo {
+    font-size: 15px;
+    padding-bottom: 40px;   
+}
+
+#section-4 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#foto1 {
+    width: 375px;  
+}
+
+#box-1 {
+    border: 1px solid #dee1e3;
+    border-radius: 5px;
+    margin: 24px;
+}
+
+#il-tuo-pc {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#foto2 {
+    width: 375px; 
+}
+
+#box-2 {
+    border: 1px solid #dee1e3;
+    border-radius: 5px;
+    margin: 24px;
+}
+
+#impara-ora {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#impara {
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 
+#foto3 {
+    width: 375px; 
+}
 
+#box-3 {
+    border: 1px solid #dee1e3;
+    border-radius: 5px;
+    margin: 24px;
+}
 
+#lavora-subito {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  
 
+/*----------------------------------------------- F O O T E R -------------------------------------------------------*/
 
+#footer {
+    text-align: center;
+    background-color: #25a2c3;
+    color: #c8e7f0;
+}
 
+#contattaci {
+    padding-top: 40px;
+}
 
+hr {
+    width: 215px;    
+}
 
+.footer {
+    color: #c8e7f0;   
+}
 
+#email {
+    margin-top: -45px;
+}
 
+#address {
+    margin-top: -45px;
+}
 
-
-
+#bottom-footer {
+    font-size: 16px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
 
