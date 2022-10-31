@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var stringa1 = 'ciao';
+        var stringa2 = "ciao";
+
+
+        document.write('<div class="testo-rosso">Ecco l\'html</div>');
+        document.write("<div class=\"testo-rosso\">Div Creato</div>");
+        /*qui sotto l'interpolazione di stringhe*/
+        document.write(`<div class="testo-rosso">Ecco l'html</div>`);
+
+     /* concatenamento*/
+
+    var nome = 'mario';
+    var saluto = 'benvenuto';
+
+    document.write(saluto + ' ' + nome + ', come stai? <br>');
+    document.write(`${saluto} ${nome}, Come stai?` );
+
+    /* operazioni matematiche*/
+
+    console.log(4 + 3 )// => 7
+    console.log (4 * 3)// => 12
+    console.log(4 / 3)// => 1.3333333333333333
+    console.log(4 - 3)// => 1
+
+    /* operazioni miste */
+
+    var numero = 5;
+    var numerostringa = '5' //non è un numero, ma una stringa
+
+    console.log(numero + numerostringa) //il numero viene convertito in stringa
+
+    console.log(numero * numerostringa) //la stringa viene convertita in numero ed avviene la moltiplicazione
+
+    console.log(numero * '5a')//=> NaN
+
+
+    </script>
+    
+</body>
+</html>
