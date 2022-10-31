@@ -1,2 +1,2 @@
-alert('Usa il pop up per dare dei messaggi');
-window.alert('Sto studiando JS');
+alert('Tra corrente e connessione oggi sarebbe comunque potuto andare peggio');
+window.alert('Avrebbe potuto piovere');
