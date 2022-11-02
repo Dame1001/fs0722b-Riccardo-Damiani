@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        saluta();
+        function saluta(){//posso lanciarla prima della dichiarazione
+            document.write('Benvenuto');
+        }
+
+        function restituisciSaluto(){
+            return 'Benvenuto';
+        }
+
+        console.log(restituisciSaluto() )
+        let saluto = restituisciSaluto();
+        //alert( saluto);
+        
+     //funzioni parametriche
+     function aggiungiTesto(t){
+     let testo = document.getElementById ('testo');
+      testo.innerHTML = t;
+     }
+
+     aggiungiTesto('ciao come va?')
+
+     function moltiplica(a,b){
+        return a * b;
+     }
+     console.log(moltiplica(2,5) );
+
+     //========== uso pratico della funzione moltiplica
+
+     function elabora(){
+        
+     }
+
+
+    </script>
+    
+</body>
+</html>
