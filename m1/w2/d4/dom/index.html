@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="contenitore">
+
+      <input id="numeri" placeholder="0" type="text">
+      <button data-simbolo="1" onclick="aggiungiCifra(this)">1</button>
+      <button data-simbolo="2" onclick="aggiungiCifra(this)">2</button>
+      <button data-simbolo="3" onclick="aggiungiCifra(this)">3</button>
+      <button data-simbolo="4" onclick="aggiungiCifra(this)">4</button>
+      <button data-simbolo="5" onclick="aggiungiCifra(this)">5</button>
+      <button data-simbolo="6" onclick="aggiungiCifra(this)">6</button>
+      <button data-simbolo="7" onclick="aggiungiCifra(this)">7</button>
+      <button data-simbolo="8" onclick="aggiungiCifra(this)">8</button>
+      <button data-simbolo="9" onclick="aggiungiCifra(this)">9</button>
+      <button data-simbolo="0" onclick="aggiungiCifra(this)">0</button>
+      <button data-simbolo="+" onclick="aggiungiCifra(this)">+</button>
+      <button data-simbolo="-" onclick="aggiungiCifra(this)">-</button>
+      <button data-simbolo="x" onclick="aggiungiCifra(this)">x</button>
+      <button onclick="tot()">=</button>
+
+
+    </div>
+
+    <script>
+
+        function aggiungiCifra(bottone){
+
+            console.log(bottone.textContent);
+
+            document.getElementById("numeri").value += bottone.textContent;
+        }
+
+        function tot(){
+            let numeri = document.getElementById("numeri");
+            numeri.value = eval(numeri.value);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function mostraPrezzo(){
+
+           var frutto = document.getElementById("frutta").value;
+           let prezzo;
+           switch (frutto) {
+               case 'Mela':
+                   console.log('Mela');
+                   break;
+               case 'Banana':
+                   console.log('Banana');
+                   break;
+               case 'Mango':
+               case 'Ananas': 
+                   console.log('Mango ed Ananas');
+                   break;
+               default: 
+               console.log('Non abbiamo' + frutto);
+                
+
+            }
+        
+        }
+    </script>
+    
+</body>
+</html>

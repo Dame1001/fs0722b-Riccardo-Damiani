@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let arr = [];
+
+        let animali = ['Tigre','Leone','Gatto','Cane'];
+
+        console.log(animali[0]);
+        animali[0] = 'Alce';
+        console.log(animali[0]);
+
+        //ATTENZIONE! evitare i buchi negli array, se si sceglie a mano un indice bisogna accertarsi di rispettare la sequenza
+        //if (animali[6] == undefined){
+        if(animali[6]){
+        animali[6] = 'Alce'; //se animali[6] esiste ho true,altrimenti false
+        console.log(animali);
+       }
+
+       //rilevare correttamente il tipo di dato
+
+       console.log(typeof animali)//typeof inefficace, da di tipo object
+       console.log(Array.isArray(animali))//true perchè animali è un array
+
+       //metodi degli array
+
+       let numeri = [10,20,800,600,233];
+       //numeri.sort();//fa un ordine alfabetico
+       numeri.sort(function(a,b){//questa funzione di callback serve a ordinare i numeri
+        return a- b;
+       })
+       console.log(numeri);
+
+       //aggiungere o rimuovere alla fine
+
+       numeri = [10,20,800,60,233];
+       numeri.push(500)//aggiunge alla fine
+       console.log(numeri);
+       let eliminato = numeri.pop()//rimuove alla fine
+       console.log(numeri, 'è stato eliminato il numero:' + eliminato);
+
+        //aggiungere o rimuovere all'inizio
+
+       numeri = [10,20,800,60,233];
+       numeri.unshift(500)//aggiunge all'inizio
+       console.log(numeri);
+       numeri.shift()//rimuove all'inizio
+       console.log(numeri);
+
+       //rimozione o sostituzione a partire da un indice
+
+       let start = 2;
+       let quantità = 1;
+       numeri.splice(start,quantità);//elimino
+       console.log(numeri);
+       numeri.splice(2,1,88);//l'88 verrà inserito in sostituzione degli elementi eliminati
+       console.log(numeri);
+
+       function trovaDistruggi(array, valore){
+        let index = array.indexOf(valore)
+        array.splice(index,1);
+        return array;
+       }
+
+       numeri = [10,20,800,60,233];
+
+       console.log( trovaDistruggi(numeri, 800) )
+
+       
+
+
+       
+        
+    </script>
+    
+</body>
+</html>
