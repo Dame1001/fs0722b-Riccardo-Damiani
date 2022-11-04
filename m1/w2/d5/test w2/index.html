@@ -9,44 +9,24 @@
 </head>
 <body>
 
-    <!--<div class="contenitore">
+   
+    <div id="calculator" class="content">
 
-        <input id="numeri" placeholder="0" type="text">
-        <button data-simbolo="1" onclick="aggiungiCifra(this)">1</button>
-        <button data-simbolo="2" onclick="aggiungiCifra(this)">2</button>
-        <button data-simbolo="3" onclick="aggiungiCifra(this)">3</button>
-        <button data-simbolo="4" onclick="aggiungiCifra(this)">4</button>
-        <button data-simbolo="5" onclick="aggiungiCifra(this)">5</button>
-        <button data-simbolo="6" onclick="aggiungiCifra(this)">6</button>
-        <button data-simbolo="7" onclick="aggiungiCifra(this)">7</button>
-        <button data-simbolo="8" onclick="aggiungiCifra(this)">8</button>
-        <button data-simbolo="9" onclick="aggiungiCifra(this)">9</button>
-        <button data-simbolo="0" onclick="aggiungiCifra(this)">0</button>
-        <button data-simbolo="+" onclick="aggiungiCifra(this)">+</button>
-        <button data-simbolo="-" onclick="aggiungiCifra(this)">-</button>
-        <button data-simbolo="x" onclick="aggiungiCifra(this)">x</button>
-        <button data-simbolo="÷" onclick="aggiungiCifra(this)">÷</button>
-        <button onclick="tot()">=</button>
-  
-  
-      </div>-->
-
-    <div class="content">
-        <input type="text" name="display" id="display" placeholder="0" readonly="readonly" class="display">
-    </div>
+        <div  class="content">
+            <input type="text" name="display" id="display" placeholder="0" readonly="readonly" class="display">
+        </div>
       
-    <div class="content">
         
         <div class="content">
-            <input type="submit" value="C" onclick="cancella()" class="tasto">
-            <input type="submit" id="/" value="÷" onclick="numero(this.id)" class="tasto">
+            <input type="submit" value="C" onclick="cancella()" class="tasto c-grande">
+            <input type="submit" id="/" value="÷" onclick="numero(this.id)" class="tasto diviso">
         </div>
         
         <div class="content">
             <input type="submit" id="7" value="7" onclick="numero(this.id)" class="tasto">
             <input type="submit" id="8" value="8" onclick="numero(this.id)" class="tasto">
             <input type="submit" id="9" value="9" onclick="numero(this.id)" class="tasto">
-            <input type="submit" id="*" value="X" onclick="numero(this.id)" class="tasto per">
+            <input type="submit" id="*" value="x" onclick="numero(this.id)" class="tasto per">
         </div>
         
         <div class="content">
@@ -63,12 +43,13 @@
            <input type="submit" id="+" value="+" onclick="numero(this.id)" class="tasto più">
         </div>
         <div class="content">
-            <input type="submit" id="0" value="0" onclick="numero(this.id)" class="tasto">
+            <input type="submit" id="0" value="0      " onclick="numero(this.id)" class="tasto grande-0">
             <input type="submit" id="." value="." onclick="numero(this.id)" class="tasto">
             <button value="=" onclick="totale()" class="tasto uguale">=</button>
        </div>
    
     </div> 
     
+    <script src="js/testD5.js"></script>
 </body>
 </html>

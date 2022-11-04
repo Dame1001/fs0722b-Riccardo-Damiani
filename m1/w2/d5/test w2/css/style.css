@@ -3,16 +3,33 @@
 .content {
     margin-left: 2px;
     text-align: center;
+    
+    
+}
+
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: white;
+    }
+    /*ho preso questo codice da internet perchè ero sicuro al 100% che non avevamo visto come colorare il numero nel placeholder*/
+
+#calculator {
+    background-image: url(../assets/apple-iphone-13-pro-max-2021-medium.png);
+    background-repeat: no-repeat;
+    background-position: center;
+   height: 750px;
+   padding-top: 450px;
+
 }
 
 .tasto {
     background-color: #313131;
     color: white;
-    font-size: 22pt;
+    font-size: 36px;
     border: none;
     margin: 4px 2px;
-    height: 46px;
-    width: 46px;
+    height: 67px;
+    width: 67px;
     border-radius: 50%;
     
     
@@ -20,12 +37,46 @@
 
 .display {
     background: none;
-    color: #175c97;
-    font-size: 24pt;
-    border: #175c97 solid 2px;
+    color: white;
+    font-size: 75px;
+     border:black solid 2px;
     margin: 4px 2px;
-    width: 204px;
-    height: 40px;            
+    width: 270px;
+    height: 67px;            
+}
+
+.per{
+    background-color: #f69906;
+}
+
+.diviso {
+    background-color: #f69906;
+    font-size: 50px;
+}
+
+.più{
+    background-color: #f69906;
+}
+
+.meno{
+    background-color: #f69906;
+}
+
+.uguale{
+    background-color: #f69906;
+}
+
+.c-grande{
+  width: 217px;
+  border-radius: 15% / 50%;
+  background-color: #9f9f9f;
+  color: black;
+  
+}
+
+.grande-0{
+    width: 147px;
+    border-radius: 25% / 50%;
 }
 
 
