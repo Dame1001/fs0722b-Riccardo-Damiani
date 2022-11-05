@@ -1,27 +1,40 @@
-
-
-.calcolatrice {
-    margin-left: 2px;
-    text-align: center;
-    
-    
+body {
+    background-image: url(../assets/earth-ga53056927_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
+.calcolatrice {  
+    text-align: center; 
+}
+
+@font-face {
+    font-family: FontPersonale;
+    src: url('../font/SF-pro-regular.ttf') format('truetype');
+}
+
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: white;
-    }
-    /*ho preso questo codice da internet perchè ero sicuro al 100% che non avevamo visto come colorare il numero nel placeholder*/
+}
+/*ho preso questo codice da internet perchè ero sicuro al 100% che non avevamo visto come colorare il numero nel placeholder*/
 
 #calculator {
     background-image: url(../assets/apple-iphone-13-pro-max-2021-medium.png);
     background-repeat: no-repeat;
-    background-position: center;
-   height: 750px;
-   padding-top: 450px;
-
+    background-position: top center;
+    height: 750px;
+    padding-top: 230px;
+    
 }
 
+
+h1 {
+    font-family: FontPersonale;
+    font-size: 80px;
+    text-align: center;
+    color:#f69906;
+}
 .tasto {
     background-color: #313131;
     color: white;
@@ -91,7 +104,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     width: 147px;
     border-radius: 25% / 50%;
 }
-
 
 
 
