@@ -10,42 +10,42 @@
 <body>
 
    
-    <div id="calculator" class="content">
+    <div id="calculator" class="calcolatrice">
 
-        <div  class="content">
-            <input type="text" name="display" id="display" placeholder="0" readonly="readonly" class="display">
+        <div  class="calcolatrice">
+            <input type="text" name="display" id="display" placeholder="0" class="display">
         </div>
       
-        
-        <div class="content">
-            <input type="submit" value="C" onclick="cancella()" class="tasto c-grande">
-            <input type="submit" id="/" value="÷" onclick="numero(this.id)" class="tasto diviso">
+                                                <!--DISCLAIMER! ho abusato di "class" in questo modo perchè era l'unico che mi permetteva di poter separare in maniera adeguata tutti i tasti potendoli poi andare a personalizzare meglio su CSS, non uccidermi-->
+        <div class="calcolatrice">
+            <input type="submit" value="C" onclick="cancella()" class="tasto c-grande grigio">
+            <input type="submit" id="/" value="÷" onclick="numero(this.id)" class="tasto diviso arancione">
         </div>
         
-        <div class="content">
-            <input type="submit" id="7" value="7" onclick="numero(this.id)" class="tasto">
-            <input type="submit" id="8" value="8" onclick="numero(this.id)" class="tasto">
-            <input type="submit" id="9" value="9" onclick="numero(this.id)" class="tasto">
-            <input type="submit" id="*" value="x" onclick="numero(this.id)" class="tasto per">
+        <div class="calcolatrice">
+            <input type="submit" id="7" value="7" onclick="numero(this.id)" class="tasto nero">
+            <input type="submit" id="8" value="8" onclick="numero(this.id)" class="tasto nero">
+            <input type="submit" id="9" value="9" onclick="numero(this.id)" class="tasto nero">
+            <input type="submit" id="*" value="x" onclick="numero(this.id)" class="tasto per arancione">
         </div>
         
-        <div class="content">
-            <input type="submit" id="4" value="4" onclick="numero(this.id)" class="tasto">
-            <input type="submit" id="5" value="5" onclick="numero(this.id)" class="tasto">
-            <input type="submit" id="6" value="6" onclick="numero(this.id)" class="tasto">
-            <input type="submit" id="-" value="-" onclick="numero(this.id)" class="tasto meno">
+        <div class="calcolatrice">
+            <input type="submit" id="4" value="4" onclick="numero(this.id)" class="tasto nero">
+            <input type="submit" id="5" value="5" onclick="numero(this.id)" class="tasto nero">
+            <input type="submit" id="6" value="6" onclick="numero(this.id)" class="tasto nero">
+            <input type="submit" id="-" value="-" onclick="numero(this.id)" class="tasto meno arancione">
         </div>
         
-       <div class="content">
-           <input type="submit" id="1" value="1" onclick="numero(this.id)" class="tasto">
-           <input type="submit" id="2" value="2" onclick="numero(this.id)" class="tasto">
-           <input type="submit" id="3" value="3" onclick="numero(this.id)" class="tasto">
-           <input type="submit" id="+" value="+" onclick="numero(this.id)" class="tasto più">
+       <div class="calcolatrice">
+           <input type="submit" id="1" value="1" onclick="numero(this.id)" class="tasto nero">
+           <input type="submit" id="2" value="2" onclick="numero(this.id)" class="tasto nero">
+           <input type="submit" id="3" value="3" onclick="numero(this.id)" class="tasto nero">
+           <input type="submit" id="+" value="+" onclick="numero(this.id)" class="tasto più arancione">
         </div>
-        <div class="content">
-            <input type="submit" id="0" value="0      " onclick="numero(this.id)" class="tasto grande-0">
-            <input type="submit" id="." value="." onclick="numero(this.id)" class="tasto">
-            <button value="=" onclick="totale()" class="tasto uguale">=</button>
+        <div class="calcolatrice">
+            <input type="submit" id="0" value="0      " onclick="numero(this.id)" class="tasto grande-0 nero">
+            <input type="submit" id="." value="." onclick="numero(this.id)" class="tasto nero">
+            <input type="submit" id="=" value="=" onclick="totale()" class="tasto uguale arancione">
        </div>
    
     </div> 

@@ -1,6 +1,6 @@
 
 
-.content {
+.calcolatrice {
     margin-left: 2px;
     text-align: center;
     
@@ -35,11 +35,16 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     
 }
 
+.nero:hover {
+    background-color: #242424;
+}
+
+
 .display {
     background: none;
     color: white;
     font-size: 75px;
-     border:black solid 2px;
+    border:black solid 2px;
     margin: 4px 2px;
     width: 270px;
     height: 67px;            
@@ -66,17 +71,27 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     background-color: #f69906;
 }
 
+.arancione:hover {
+    background-color: #b87303;
+  }
+
 .c-grande{
-  width: 217px;
-  border-radius: 15% / 50%;
-  background-color: #9f9f9f;
-  color: black;
-  
+    width: 217px;
+    border-radius: 15% / 50%;
+    background-color: #9f9f9f;
+    color: black;
+    
+}
+
+.grigio:hover {
+    background-color: #747474 ;
 }
 
 .grande-0{
     width: 147px;
     border-radius: 25% / 50%;
 }
+
+
 
 
