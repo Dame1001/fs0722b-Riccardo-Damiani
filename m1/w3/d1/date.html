@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="time"></div>
+
+    <script>
+
+        let now = new Date();
+        let anno = now.getFullYear();
+        let month = now.getMonth();//conteggio come gli array,partendo da 0
+        let giornoSettimana = now.getDay();//domenica primo giorno della settimana con indice 0
+        let giornoMese = now.getDate();
+        let orario = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+
+
+
+        let passato = new Date('2/2/2022 22:22:22');
+
+        if(passato < now){//se passato è precedente al now
+            console.log('il 2 febbraio 2022 è una data passata');
+            console.log(passato.getTime(), now.getTime());
+        }
+
+        console.log(anno, month, giornoSettimana, giornoMese, orario);
+
+        setInterval(function() {
+
+            let time = new Date();
+            document.getElementById('time').textContent = time.toLocaleTimeString()
+            //time.toLocaleTimeString() 
+            
+        }, 1000)//lasso di tempo per l'esecuzione della funzione in millisecondi
+
+
+        console.log(now.toLocaleTimeString());
+        console.log(now.toLocaleDateString());
+
+        let options = {
+            weekday:'long',
+            year:'numeric',
+            month:'long',
+            day:'numeric'
+        }
+        
+        let dataFormattata = now.toLocaleDateString ('it-IT',options)
+        console.log(dataFormattata); 
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
