@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #scacchiera{
+            width: 450px;
+            height: 450px;
+            
+        }
+
+        .casella{
+            height: calc(100% / 8 - 2px);
+            width: calc(100% / 8 - 2px);
+            border: 1px solid black;
+            display: inline-block;
+            margin-left: -0,1 rem;
+            margin-bottom: -0,1 rem;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="scacchiera"></div>
+
+    <script>
+
+        let scacchiera = document.querySelector('#scacchiera'); //oggetto
+        for(let i = 0; i < 8; i++){
+            for(let j = 0; j < 8; j++){
+                let colore = (i + j) % 2 ? '#000' : '#fff'; 
+                let div = document.createElement('div')//<div></div> crea l'elemento e lo tiene in memoria e non appare finchè non lo dico io
+                console.log(div);
+                div.classList.add('casella')//accedi alla lista di classi e aggiungi la classe casella
+                div.style.backgroundColor = colore;
+                scacchiera.append(div);//prendi il div e mettilo dentro schacchiera
+
+
+                //scacchiera.innerHTML += `<div class="casella" style="background-color:${colore}">${i} - ${j}</div>`;
+            }
+        }
+
+
+           
+
+    </script>
+    
+</body>
+</html>
