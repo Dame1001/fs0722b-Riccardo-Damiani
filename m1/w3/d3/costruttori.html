@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+class Persona {
+
+constructor(_nome, _cognome){
+    this.nome = _nome;
+    this.cognome = _cognome;
+    this.presentazione();
+}
+
+presentazione(){
+    console.log(`Ciao, mi chiamo ${this.nome} ${this.cognome}`);
+}
+
+}
+let mario = new Persona('Mario','Rossi'); //sto istanziando un oggetto
+console.log(mario)
+
+
+//posso modificare le proprietà anche dopo la creazione dell'oggetto
+let riccardo = new Persona()
+riccardo.nome = 'Riccardo';
+riccardo.cognome = 'Damiani';
+console.log(riccardo)
+
+
+    </script>
+    
+</body>
+</html>

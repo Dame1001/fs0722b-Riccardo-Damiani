@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+
+
+        
+
+        //costruttore
+        function Persona(_nome, _cognome){
+            this.nome = _nome;
+            this.cognome = _cognome;
+            this.presentazione = function(){// è un metodo
+                console.log(`Ciao, mi chiamo ${this.nome} ${this.cognome}`);
+                //devo puntare alle proprietà usando this, cosi anche se il dato viene aggiornato avrò sempre un riferimento preciso
+            }
+        }
+
+        let mario = new Persona('Mario','Rossi'); //sto istanziando un oggetto
+        console.log(mario)
+        mario.presentazione();
+
+        //posso modificare le proprietà anche dopo la creazione dell'oggetto
+        let riccardo = new Persona()
+        riccardo.nome = 'Riccardo';
+        riccardo.cognome = 'Damiani';
+        console.log(riccardo)
+        riccardo.presentazione();
+
+
+        Persona.prototype.anni = null;//aggiungo una proprietà con valore zero
+
+        riccardo.anni = 25;
+        console.log(riccardo)
+
+
+
+    </script>
+    
+</body>
+</html>
