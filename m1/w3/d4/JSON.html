@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let jsonText = '[{"gusto":"Margherita","prezzo":5},{"gusto":"Diavola","prezzo":1}]';
+        let obj = JSON.parse(jsonText);
+        console.log(obj);
+        
+        let objToStr = JSON.stringify(obj);//se ho un oggetto lo posso trasformare in stringa
+        console.log(objToStr);
+        
+        //bonus track
+
+        localStorage.setItem('pizze',objToStr);//creo una voce pizze
+
+        let pizze = localStorage.getItem('pizze');//stringa da convertire in oggetto
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :target{
+            background-color: red
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#target1">target 1</a>
+    <a href="#target2">target 2</a>
+    <a href="#target3">target 3</a>
+
+    <div id="target1">elemento target</div>
+    <div id="target2">elemento target</div>
+    <div id="target3">elemento target</div>
+
+    <button onclick="history.back()">Indietro</button>
+    <button onclick="history.forward()">Avanti</button>
+    <button onclick="history.go(2)">Avanti di 2</button>
+    <button onclick="history.go(-2)">Indietro di 2</button>
+    
+
+    <script>
+
+        console.log(history)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:not(input[type="submit"]){
+            padding: 15px 30px;
+            border-radius: 5px;
+            margin-bottom:5px
+        }
+
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            padding:10px 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="myForm">
+
+        <div>
+            <input type="text" data-error="Manca il nome" id="nome" class="notEmpty" placeholder="Nome">
+        </div>
+        <div>
+            <input type="text" data-error="Manca il cognome" id="cognome" class="notEmpty" placeholder="Cognome">
+        </div>
+        <div>
+            <input type="email" data-error="Manca l'email" id="email" class="notEmpty" placeholder="Email">
+        </div>
+        <div>
+            <input type="password" data-error="Manca la password " id="password" class="notEmpty" placeholder="Password">
+        </div>
+
+        <button type="button">mostra/nascondi</button>
+
+        <input type="submit" id="invia">
+        
+    </form>
+
+    <script>
+        
+        let formBtn = document.getElementById("invia");
+
+        formBtn.addEventListener("click",function(e){
+            e.preventDefault();//blocca funzionalità default
+            let valid = true;//varibile di controllo
+
+            let campi = document.querySelectorAll('.notEmpty')    
+            
+            for(let c of campi){
+
+                if(!document.querySelector(`#${c.id}-error`)){
+                    let span = document.createElement('span');
+                    span.id = `${c.id}-error`
+                    c.after(span);
+                }
+
+                if(!c.value){//nome.value == '';
+                    let error = c.getAttribute("data-error");
+                    c.nextElementSibling.textContent = error;
+                    valid = false
+                }else{
+                    c.nextElementSibling.textContent = '';
+                }
+            }
+
+            if(valid){
+                console.log('form inviato')
+                //form.submit()
+            }
+        })
+
+        
+        </script>
+</body>
+</html>

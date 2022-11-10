@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="utenti"></div>
+    <div id="pizze"></div>
+    
+
+    <script>
+
+
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then((res)=>res.json())
+        .then((utenti)=>{
+
+            console.log(utenti)
+            let areaUtenti = document.getElementById('utenti'); 
+
+            for(let utente of utenti){
+                let div = document.createElement('div')
+                div.innerHTML = utente.name
+                areaUtenti.append(div)
+            }
+        })
+
+        fetch('pizze.json')
+        .then((res)=>res.json())
+        .then((pizze)=>{
+
+            console.log(pizze)
+            let areaPizze = document.getElementById('pizze'); 
+
+            for(let pizza of pizze){
+                let div = document.createElement('div')
+                div.innerHTML = pizza.gusto + ' €' + pizza.prezzo
+                areaPizze.append(div)
+            }
+        })
+
+
+    </script>
+</body>
+</html>

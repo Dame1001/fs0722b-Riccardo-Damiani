@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="lista">
+
+    </div>
+    <button id="crea">Crea</button>
+    <button id="elimina">Elimina</button>
+    
+    <script>
+
+        let crea = document.querySelector('#crea');
+
+        let arrayDiv = [];
+        let i = 0;
+        
+        //creo tutti i bottoni
+        crea.addEventListener('click', function() {
+            
+            let div = document.createElement('div');
+            let divText = document.createTextNode('Div Creato ' + i);
+            let span = document.createElement('span');
+            let spanText = document.createTextNode('Span figlio Creato');
+            //div.textContent = 'Div creato';
+
+            arrayDiv.push(div);//salvo tutti i div in un array, così da utilizzarli in futuro
+            
+            span.append(spanText);
+            div.append(divText, span);
+            document.querySelector('#lista').append(div);
+
+            div.addEventListener('click',()=>eliminaControlla(div))
+            i++;
+        });
+
+        function eliminaControlla(div){
+            console.log(div.childNodes)//Array con tutto il contenuto dell'elemento selezionato
+            console.log(div.childNodes[0].textContent)//testo del div(escludento il testo dello span figlio)
+            console.log(div.firstChild.textContent)//testo del div(escludento il testo dello span figlio)
+            console.log(div.childNodes[1].textContent)//testo dello span figlio del div
+            console.log(div.lastChild.textContent)//testo dello span figlio del div
+            console.log(div.parentNode)//l'elemento genitore
+            console.log(div.nextElementSibling)//l'elemento fratello successivo
+            //div.remove();se voglio eliminare l'elemento al click
+        }
+        
+
+        //elimino tutti i bottoni
+        let elimina = document.querySelector('#elimina');
+        elimina.addEventListener('click',function(){
+
+            //let arrayDiv = document.querySelectorAll('#lista > div');//posso anche fare così
+            for(let el of arrayDiv){
+                el.remove();
+            }
+            arrayDiv = [];//se ho creato la variabile globale conviene anche svuotare l'array
+
+        })
+        
+
+    </script>
+</body>
+</html>
