@@ -57,31 +57,37 @@
       */
 
       const changeTitle = function (newTitle) {
-        //
-      }
+        document.querySelector("h1").textContent = newTitle;
+      };
+
+      
 
       /* ESERCIZIO 2
        Scrivi una funzione per cambiare la classe del titolo della pagina in "myHeading".
       */
 
-      const addClassToTitle = function () {
-        //
-      }
-
+      const addClassToTitle = function (myHeading) {
+        document.querySelector("h1").classList.toggle ("myHeading");
+      } 
+      
+      
+     
+        
       /* ESERCIZIO 3
        Scrivi una funzione per cambiare il contenuto di tutti i p che sono discendenti di un div.
       */
 
       const changePcontent = function () {
-        //
+        document.querySelector("p").textContent = 'testo esercizio 3';
       }
+      
 
       /* ESERCIZIO 4
        Scrivi una funzione per cambiare la proprietà href di ogni link a https://www.google.com
       */
 
       const changeUrls = function () {
-        //
+        document.querySelector("")
       }
 
       /* ESERCIZIO 5
@@ -146,6 +152,10 @@
       window.onload = function () {
         //
       }
+
+      //changeTitle("Esercizio 1")
+      //addClassToTitle('myHeading')
+      //changePcontent()
     </script>
   </body>
 </html>
