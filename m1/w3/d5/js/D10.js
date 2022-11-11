@@ -120,21 +120,46 @@ console.log(splitMe('Io sono Riccardo'))
 */
 console.log('Esercizio 4');
 
-
+function deleteOne( str, boolean = true){
+  if ( boolean){
+   let stringa1 = str.slice(1);
+   return stringa1;
+  }
+   else{
+     let stringa2 = str.slice(0,-1);
+     return stringa2;
+    }
+ }
+ console.log(deleteOne('Test', true));
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
+console.log('Esercizio 5')
+
+function onlyLetters(str){ //ho dichiarato la funzione onlyLetters
+   let frase = ('Io ho 4 cani'); //ho inserito la frase originale all'interno di questa variabile
+  let numeri = frase.replace(/4/, " ");//ho utilizzato il metodo replace per sostituire il numero all'interno della stringa con uno spazio vuoto
+  return numeri //ho dato il return per ottenere la nuova frase
+}
+console.log(onlyLetters('Io ho 4 cani'))
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
+
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+console.log('Esercizio 7')
+
+var whatDayIsIt = new Date()// dichiarata la variabile 
+let giorno = whatDayIsIt.getDay()//ho utlilizzato il metodo getDay per recuperare il giorno della settimana corrente
+
+console.log(giorno)
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -149,13 +174,37 @@ console.log('Esercizio 4');
   }
 */
 
+
+
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
+console.log('Esercizio 9')
+
+var d1 = new Date("2022-10-10") 
+var d2 = new Date("2022-9-10")
+
+let differenza = d2.getTime() - d1.getTime()
+
+let diff = differenza / (1000 * 60 * 60 * 24)
+
+console.log(diff)
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
+console.log('Esercizio 10')
+
+var isTodayMyBirthday = function (a){
+  if(a === 11){
+    return true
+  }
+  else{
+    return false
+  }
+}
+
+console.log(isTodayMyBirthday(11));
 
 // Arrays & Oggetti
 
@@ -204,31 +253,91 @@ console.log('Esercizio 4');
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
+console.log('Esercizio 20')
+
+ 
+ 
+ function container () { // ho creato la funzione 
+   let select = document.getElementById ('container') //ho usato getElementById per andare a prendere l'elemento con id "container"
+   
+  }
 
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+console.log('Esercizio 21')
+
+function es21(){
+  let td = document.querySelectorAll('td')
+}
+
+es21()
+
+
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
+const a = document.querySelectorAll('td');
+function es22(){
+    for(let i = 0 ; i < a.length ; i++ ){let tdNew = a[i].textContent = 'testo boh';
+  }
+}
+es22()
+
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
+console.log('Esercizio 23')
+
+let es23= function () {
+  let a = document.querySelectorAll('a')
+ for (let i = 0; i < a.length; i++) {
+ a [i].style.backgroundColor='red'
+ }
+}
+
+es23();
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
+console.log('Esercizio 24')
+
+let es24 = function () {
+  let SecondList = document.querySelector('#myList');
+  let test = document.creatElement('li') 
+  test.innerHTML = content;
+  SecondList.appendChild(test);
+}
+es24('esercizio');
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
+console.log('Esercizio 25')
+
+function es25(){
+  document.getElementById('myList')
+  myList.textContent = ''
+
+}
+es25()
 
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+console.log('Esercizio 26')
+
+let es26 = document.querySelectorAll("tr").className ='testo';{
+  for (let i = 0; i < ciao.length; i++) {
+  }
+
+  }
+es26(tr)
+
 
 // [EXTRA] JS Avanzato
 
