@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasformazioni</title>
+    <style>
+        div.a {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: rotate(30deg);
+        }
+        div.b {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: skew(20deg, 20deg) /*skewX | skewY */
+        }
+        div.c {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: scale(1, 1.5); /* scaleX | scaleY */
+        }
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotate(45deg) scale(0.3) skew(10deg, 30deg);
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>la proprietà transform</h2>
+    <h2>Transform rotate</h2>
+    <br>
+    <div class="a">Rotate</div>
+    <br>
+    <h2>transform skew</h2>
+    <br>
+    <div class="b">Skew</div>
+    <br>
+    <h2>transform scale</h2>
+    <br>
+    <div class="c">Scale</div>
+    <br>
+    <h2>Più transformazioni in contemporanea</h2>
+    <div id="box"></div>
+    
+    
+</body>
+</html>
