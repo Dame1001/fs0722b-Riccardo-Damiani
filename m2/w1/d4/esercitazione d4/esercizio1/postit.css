@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap%27');
+
+
+body {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    
+    
+}
+#container {
+    background-color: #666666;
+    width: 100vw;
+    height: 60vh;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em 1em;
+}
+
+#container div {
+    width: 20%;
+    margin: 1em 1em;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: 'Indie Flower', cursive;
+}
+
+#container div p {
+    line-height: 1em;
+ 
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.giallo{
+    background-color: #f4f4c2;
+    transform: rotate(-5deg);
+}
+
+.verde {
+    background-color: #c5f5c8;
+    transform: rotate(8deg);
+}
+
+.viola {
+    background-color: #b5b4d3;
+    transform: rotate(3deg);
+
+}
+
+#container div:hover{
+    box-shadow: 10px 10px 7px rgba(33, 33, 33, 0.7);
+    transform: scale(1.1);
+    position: relative;
+    z-index: 5;
+}
+
+#postit-1{
+    animation-name: discesa;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+ }
+ #postit-2{
+     animation-name: discesa;
+    animation-duration: 1.3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+ }
+ #postit-3{
+     animation-name: discesa;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+ }
+ #postit-4{
+     animation-name: discesa;
+    animation-duration: 0.7s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+ }
+ #postit-5{
+     animation-name: discesa;
+    animation-duration: 0.2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+ }
+ #postit-6{
+     animation-name: discesa;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+ }
+ #postit-7{
+     animation-name: discesa;
+    animation-duration: 0.6s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+ }
+ #postit-8{
+     animation-name: discesa;
+    animation-duration: 1.3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+ }
+ @keyframes discesa{
+     0% {opacity: 0%;transform:scale(1.1);}
+     50% {opacity: 0%;transform:scale(1.1);}
+     100% {opacity: 100%; transform:scale(1);}
+ }
+
+
+
+   
+
+
