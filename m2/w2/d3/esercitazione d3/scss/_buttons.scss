@@ -1,0 +1,15 @@
+#bottoni button:nth-child(1) {
+    color: white;
+    background-color: $colore_blu;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#bottoni button:nth-child(2) {
+    color: white;
+    background-color: $colore_arancio;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}

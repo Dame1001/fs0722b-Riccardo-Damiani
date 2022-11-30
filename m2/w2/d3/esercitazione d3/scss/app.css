@@ -1,0 +1,67 @@
+#bottoni button:nth-child(1) {
+  color: white;
+  background-color: #3269f7;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#bottoni button:nth-child(2) {
+  color: white;
+  background-color: #f08d37;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #5b17bd;
+  margin: 5vh 10vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  margin: 1vh;
+  font-size: 0.8em;
+}
+nav ul li a {
+  color: #e5c7f7;
+  text-decoration: none;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+}
+#container #testi {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+#container #testi h1 {
+  display: flex;
+  margin-bottom: 0;
+}
+#container #testi p {
+  display: flex;
+  margin-top: 0;
+}
+#container #image {
+  width: 40vw;
+}
+#container #image img {
+  width: 50%;
+}/*# sourceMappingURL=app.css.map */

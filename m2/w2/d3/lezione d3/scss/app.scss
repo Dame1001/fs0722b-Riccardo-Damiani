@@ -1,0 +1,87 @@
+nav {
+    display: block;
+    ul {
+        display: inline;
+        background: yellow;
+        border: 1px solid black;
+    }
+}
+
+/* selettori nidificati */
+
+#main {
+    p {    /*vincolo lo stile al contenitore e non devo riscrivere il parent*/
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    span {
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+    a{
+        color: red;
+        text-decoration: none;
+    }
+}
+
+/* Selettori nidificati 2 */
+
+#main2 {
+    background-color: red;
+    div {
+        color: blue;
+        .red {
+            color: green;
+            a{text-decoration: none;}
+        }
+    }
+}
+
+/* Nesting */
+
+.esempio {
+    background-color: green;
+    h1 {color: gray;}
+    .titolo {font-size: 52px;} 
+    .bottone {background-color: black;}
+}
+
+/* keyword & */
+#pippo {
+    color: red;
+    font-size: 1.5em;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.esempio2 {
+    background-color: blue;
+    h1 {
+        color: gray;
+        &:hover {font-size: 52px;}
+    }
+    .bottone {
+        background-color: gray;
+    }
+}
+
+#main3 {
+    color: black;
+    &-sidebar {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    body.firefox & {
+        line-height: 1.5em;
+    }
+}
+
+#main4 {
+    font: {
+        family: Georgia;
+        size: 1.5em;
+        weight: bold
+    };
+}
