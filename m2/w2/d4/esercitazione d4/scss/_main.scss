@@ -1,0 +1,21 @@
+main {
+    margin: 2vh 15vw;
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 40vw; 
+    }
+    aside {
+        width: 20vW;
+        ul {
+            list-style: none;
+            li{
+                border-bottom: 1px dashed;
+                border-color: rgba(0, 0, 0, 0.233);
+                padding-bottom: 15px;
+                padding-top: 15px;
+
+            }
+        }
+    }
+}
