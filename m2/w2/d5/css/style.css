@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;500;600&display=swap");
+header {
+  background: linear-gradient(180deg, #7e36f4, #6712f0);
+}
+header nav div div ul li .nav-link {
+  color: #fd2750;
+}
+
+main #section-1 {
+  background-image: url(../img/pexels-aleksandar-pasaric-325185.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+main #section-1 div {
+  margin: 0 5vw;
+}
+main #section-1 div h1 {
+  padding-top: 1vw;
+  font-family: "Anek Devanagari", sans-serif;
+}
+main #section-1 div p {
+  padding-top: 0.5vw;
+  font-family: "Anek Devanagari", sans-serif;
+  font-size: 20px;
+}
+main #section-1 div button {
+  background-color: #660ff0;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+}
+main #cards {
+  background-color: #f5f5f5;
+  padding: 5vh 5vw;
+}
+main #cards .card {
+  background-color: #f5f5f5;
+  border: none;
+  margin-right: auto;
+  font-family: "Anek Devanagari", sans-serif;
+}
+main #cards .card svg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+}
+main #partner h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 5rem;
+  font-family: "Anek Devanagari", sans-serif;
+}
+
+.carousel-img {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+#title-car {
+  font-family: "Anek Devanagari", sans-serif;
+}
+
+footer {
+  background: linear-gradient(180deg, #7e36f4, #6712f0);
+  padding-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */
