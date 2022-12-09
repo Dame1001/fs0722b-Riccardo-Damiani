@@ -17,3 +17,5 @@ function check() {
     }
     document.querySelector(".title").innerHTML = txt;
 }
+
+console.log("ciao")
