@@ -11,7 +11,7 @@ fetch('json/users.json').then(function (response) {
     <img src="${classe[i].profileURL}" class="card-img-top w-25 m-auto mt-3 bg-secondary rounded-circle" alt="immagine profilo">
     <div class="card-body">
       <h5 class="card-title">${classe[i].firstName} ${classe[i].lastName}</h5>
-      <a href="#" class="card-link text-warning">${classe[i].email}</a>
+      <a href="#" class="card-link text-warning text-decoration-none">${classe[i].email}</a>
     </div>
     </div>`
     }
