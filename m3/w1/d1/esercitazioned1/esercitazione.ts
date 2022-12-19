@@ -1,0 +1,24 @@
+let giocatore1:number = Math.floor(Math.random()*(100 - 1) + 1)
+let giocatore2:number = Math.floor(Math.random()*(100 - 1) + 1)
+
+function casualNumber(a , b ) {
+    console.log('il giocatore 1 ha detto ' + a)
+    console.log('il giocatore 2 ha detto ' + b)
+    let numeroCasuale:number = Math.floor(Math.random()*(100 - 1) + 1)
+    console.log(numeroCasuale)
+    if( a == numeroCasuale){
+        console.log('giocatore 1 ha vinto')
+    } else if ( b == numeroCasuale) {
+        console.log('giocatore 2 ha vinto')
+    }else {
+        if(Math.abs(numeroCasuale - a) > Math.abs(numeroCasuale - b)) {
+            console.log('Nessuno dei due ha indovinato, ma il giocatore 2 è più vicino')
+        } else {
+            console.log('Nessuno dei due ha indovinato, ma il giocatore 1 è più vicino')
+
+        }
+    }
+
+    
+}
+casualNumber(giocatore1, giocatore2)
