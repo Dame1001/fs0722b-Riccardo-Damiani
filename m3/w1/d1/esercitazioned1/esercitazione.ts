@@ -1,7 +1,7 @@
 let giocatore1:number = Math.floor(Math.random()*(100 - 1) + 1)
 let giocatore2:number = Math.floor(Math.random()*(100 - 1) + 1)
 
-function casualNumber(a , b ) {
+function confronto(a , b ) {
     console.log('il giocatore 1 ha detto ' + a)
     console.log('il giocatore 2 ha detto ' + b)
     let numeroCasuale:number = Math.floor(Math.random()*(100 - 1) + 1)
@@ -21,4 +21,4 @@ function casualNumber(a , b ) {
 
     
 }
-casualNumber(giocatore1, giocatore2)
+confronto(giocatore1, giocatore2)
