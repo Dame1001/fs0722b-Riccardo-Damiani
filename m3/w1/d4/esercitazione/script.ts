@@ -41,9 +41,9 @@ fetch("assets/Abbigliamento.json")
          <h5 class="card-title mb-2">${(vestito.capo).toUpperCase()}</h5>
          <p class="card-text lh-2">Collezione: ${vestito.collezione}</p>
          <p class="card-text lh-2">Colore: ${vestito.colore}</p>
-         <p class="card-text lh-2">Prezzo iniziale: ${vestito.prezzoIvaInclusa}€</p>
-         <p class="card-text lh-2">prezzo scontato: ${vestito.getAcquistoCapo()}€</p>
-         <p class="card-text lh-2">sconto: ${vestito.saldo}%</p>
+         <p class="card-text lh-2">Prezzo base: ${vestito.prezzoIvaInclusa}€</p>
+         <p class="card-text lh-2">Prezzo speciale: ${vestito.getAcquistoCapo()}€</p>
+         <p class="card-text lh-2">Sconto: ${vestito.saldo}%</p>
          <button class="border rounded bg-white">Compra</button>
        </div>
        </div> 
