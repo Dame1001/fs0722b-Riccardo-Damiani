@@ -6,7 +6,7 @@ fetch("assets/Abbigliamento.json")
     let principale = document.querySelector('#principale');
     let coloreSfondo;
     for (let i = 0; i < myJson.length; i++) {
-        let vestito = new Vestito(myJson[i].id, myJson[i].codprod, myJson[i].collezione, myJson[i].capo, myJson[i].modello, myJson[i].quantita, myJson[i].colore, myJson[i].prezzoivaesclusa, myJson[i].prezzoivainclusa, myJson[i].disponibile, myJson[i].saldo);
+        let vestito = new CapoAbbigliamento(myJson[i].id, myJson[i].codprod, myJson[i].collezione, myJson[i].capo, myJson[i].modello, myJson[i].quantita, myJson[i].colore, myJson[i].prezzoivaesclusa, myJson[i].prezzoivainclusa, myJson[i].disponibile, myJson[i].saldo);
         if (vestito.colore == 'nero') {
             coloreSfondo = '#0000008f';
         }
@@ -48,7 +48,7 @@ fetch("assets/Abbigliamento.json")
        `;
     }
 });
-class Vestito {
+class CapoAbbigliamento {
     constructor(id, codprod, collezione, capo, modello, quantita, colore, prezzoIvaEsclusa, prezzoIvaInclusa, disponibile, saldo) {
         this.id = id;
         this.codprod = codprod;
