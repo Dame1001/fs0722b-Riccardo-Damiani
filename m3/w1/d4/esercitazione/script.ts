@@ -19,7 +19,7 @@ fetch("assets/Abbigliamento.json")
         coloreSfondo='#caaa81a3'
        }
        else if(vestito.colore=='verde'){
-        coloreSfondo='#00ff4096'
+        coloreSfondo='#00563bbd'
        }
        else if(vestito.colore=='blu'){
         coloreSfondo='#002d62b3'
