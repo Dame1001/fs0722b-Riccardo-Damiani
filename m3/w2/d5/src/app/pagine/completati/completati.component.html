@@ -1,0 +1,11 @@
+<div class="container d-flex justify-content-center mt-5">
+  <div *ngIf="!controllo">Il sium sta controllando le tue task...</div>
+  <div *ngIf="controllo && todos.length == 0">Non hai ancora fatto nulla!</div>
+
+  <div *ngIf="controllo && todos.length > 0">
+    <div class="container" *ngFor="let todo of todos">
+      {{ todo.title }}
+      <div class="btn btn-danger" (click)="elimina(todo.id)">Remove</div>
+    </div>
+  </div>
+</div>
